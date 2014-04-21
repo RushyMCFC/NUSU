@@ -2,6 +2,7 @@ package com.example.nusu;
 
 import com.parse.Parse;
 import com.parse.ParseObject;
+import com.parse.ParseUser;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,12 +15,6 @@ public class Flash extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(image);
 		setContentView(R.layout.flashfirst);
-		
-		Parse.initialize(this, "4sBrHygjOI6X0zmbhoVA0AIuTwH22039INo2NbKb", "y5lCUAXPz72Te4wUV7mtLXQcVdLge2KuKrHIXYv5");
-		ParseObject testObject = new ParseObject("TestObject");
-		testObject.put("foo", "bar");
-		testObject.saveInBackground();
-		
 		Thread timer = new Thread() {
 			public void run() {
 				try {

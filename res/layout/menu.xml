@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/options"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/back1"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <ImageButton
+            android:id="@+id/news"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/activities"
+            android:background="@drawable/newscustom" />
+
+        <ImageButton
+            android:id="@+id/blackboard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/blackboardcustom"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/events"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/eventscustom"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1"
+        android:layout_centerHorizontal="true" >
+
+        <ImageButton
+            android:id="@+id/email"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/emailcustom"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/activities"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/row1"
+        android:layout_below="@+id/row1"
+        android:background="@drawable/activitiescustom"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/photos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/row1"
+        android:layout_alignTop="@+id/row2"
+        android:background="@drawable/photoscustom"
+        android:clickable="true" />
+
+</RelativeLayout>

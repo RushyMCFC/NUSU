@@ -21,8 +21,12 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				try {
 				Intent openStart = new Intent("com.example.nusu.MENU");
 				startActivity(openStart);
+				}catch(Exception e) {
+					e.printStackTrace();
+				}
 			}
 		});
     }

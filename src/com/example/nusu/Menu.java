@@ -15,6 +15,7 @@ public class Menu extends Activity{
 	ImageButton news;
 	ImageButton blackboard;
 	ImageButton email;
+	ImageButton contact;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -37,9 +38,12 @@ public class Menu extends Activity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Uri uri = Uri.parse("https://blackboard.ncl.ac.uk/webapps/portal/frameset.jsp");
+				/**Uri uri = Uri.parse("https://blackboard.ncl.ac.uk/webapps/portal/frameset.jsp");
 				Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-				startActivity(intent);
+				startActivity(intent);*/
+				Intent openStart = new Intent(Menu.this, WebView_activity.class);
+				openStart.putExtra("link", "https://blackboard.ncl.ac.uk/webapps/portal/frameset.jsp");
+				startActivity(openStart);
 			}
 		});
         
@@ -49,9 +53,23 @@ public class Menu extends Activity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Uri uri = Uri.parse("https://adfs.ncl.ac.uk/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=wa%3Dwsignin1.0%26rpsnv%3D3%26ct%3D1398115288%26rver%3D6.1.6206.0%26wp%3DMBI_KEY%26wreply%3Dhttps:%252F%252Fwww.outlook.com%252Fowa%252F%26id%3D260563%26whr%3Dnewcastle.ac.uk%26CBCXT%3Dout%26vv%3D2000");
+				/**Uri uri = Uri.parse("https://adfs.ncl.ac.uk/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=wa%3Dwsignin1.0%26rpsnv%3D3%26ct%3D1398115288%26rver%3D6.1.6206.0%26wp%3DMBI_KEY%26wreply%3Dhttps:%252F%252Fwww.outlook.com%252Fowa%252F%26id%3D260563%26whr%3Dnewcastle.ac.uk%26CBCXT%3Dout%26vv%3D2000");
 				Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-				startActivity(intent);
+				startActivity(intent);*/
+				Intent openStart = new Intent(Menu.this, WebView_activity.class);
+				openStart.putExtra("link", "https://adfs.ncl.ac.uk/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=wa%3Dwsignin1.0%26rpsnv%3D3%26ct%3D1398115288%26rver%3D6.1.6206.0%26wp%3DMBI_KEY%26wreply%3Dhttps:%252F%252Fwww.outlook.com%252Fowa%252F%26id%3D260563%26whr%3Dnewcastle.ac.uk%26CBCXT%3Dout%26vv%3D2000");
+				startActivity(openStart);
+			}
+		});
+        
+        contact = (ImageButton) findViewById(R.id.contact);
+        contact.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent openStart = new Intent("com.example.nusu.CONTACT");
+				startActivity(openStart);
 			}
 		});
     }

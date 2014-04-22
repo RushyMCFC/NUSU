@@ -74,4 +74,14 @@
         android:background="@drawable/photoscustom"
         android:clickable="true" />
 
+    <ImageButton
+        android:id="@+id/contact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/activities"
+        android:layout_below="@+id/activities"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/contactcustom"
+        android:clickable="true" />
+
 </RelativeLayout>

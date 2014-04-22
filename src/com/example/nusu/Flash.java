@@ -24,7 +24,7 @@ public class Flash extends Activity {
 					e.printStackTrace();
 				}
 				finally {
-					Intent openStart = new Intent("com.example.nusu.STARTINGPOINT");
+					Intent openStart = new Intent("com.example.nusu.MAINACTIVITY");
 					startActivity(openStart);
 				}
 			}

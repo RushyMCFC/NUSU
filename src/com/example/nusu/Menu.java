@@ -16,6 +16,7 @@ public class Menu extends Activity{
 	ImageButton blackboard;
 	ImageButton email;
 	ImageButton contact;
+	ImageButton events;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -27,7 +28,7 @@ public class Menu extends Activity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent openStart = new Intent("com.example.nusu.NEWS");
+				Intent openStart = new Intent("com.example.nusu.MAPSEARCH");
 				startActivity(openStart);
 			}
 		});
@@ -69,6 +70,17 @@ public class Menu extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent openStart = new Intent("com.example.nusu.CONTACT");
+				startActivity(openStart);
+			}
+		});
+        
+        events = (ImageButton) findViewById(R.id.events);
+        events.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent openStart = new Intent("com.example.nusu.EVENTS");
 				startActivity(openStart);
 			}
 		});

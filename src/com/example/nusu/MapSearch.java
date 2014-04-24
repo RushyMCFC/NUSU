@@ -33,8 +33,10 @@ public class MapSearch extends Activity {
 	          .icon(BitmapDescriptorFactory
 	              .fromResource(R.drawable.ic_launcher)));
 	      
-	      map.moveCamera(CameraUpdateFactory.newLatLngZoom(HAMBURG, 15));
+	      //map.moveCamera(CameraUpdateFactory.newLatLngZoom(HAMBURG, 15));
 	      
 	      map.animateCamera(CameraUpdateFactory.zoomTo(10),2000,null);
+	      
+	      map.setMyLocationEnabled(true);
 	  }
 }

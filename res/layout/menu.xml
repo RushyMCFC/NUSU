@@ -18,7 +18,6 @@
             android:id="@+id/news"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_above="@+id/activities"
             android:background="@drawable/newscustom" />
 
         <ImageButton
@@ -82,6 +81,16 @@
         android:layout_below="@+id/activities"
         android:layout_marginTop="21dp"
         android:background="@drawable/contactcustom"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/mapsearch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/row2"
+        android:layout_below="@+id/row2"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/mapsearchcustom"
         android:clickable="true" />
 
 </RelativeLayout>

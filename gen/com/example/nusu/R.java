@@ -240,29 +240,33 @@ containing a value of this type.
         public static final int login2=0x7f02002f;
         public static final int logincustom=0x7f020030;
         public static final int logo2=0x7f020031;
-        public static final int news=0x7f020032;
-        public static final int news2=0x7f020033;
-        public static final int newscustom=0x7f020034;
-        public static final int photos=0x7f020035;
-        public static final int photos2=0x7f020036;
-        public static final int photoscustom=0x7f020037;
-        public static final int rssback=0x7f020038;
+        public static final int mapsearch=0x7f020032;
+        public static final int mapsearch2=0x7f020033;
+        public static final int mapsearchcustom=0x7f020034;
+        public static final int news=0x7f020035;
+        public static final int news2=0x7f020036;
+        public static final int newscustom=0x7f020037;
+        public static final int photos=0x7f020038;
+        public static final int photos2=0x7f020039;
+        public static final int photoscustom=0x7f02003a;
+        public static final int rssback=0x7f02003b;
     }
     public static final class id {
-        public static final int action_settings=0x7f050020;
-        public static final int activities=0x7f050018;
-        public static final int blackboard=0x7f050019;
+        public static final int action_settings=0x7f050021;
+        public static final int activities=0x7f05001b;
+        public static final int blackboard=0x7f050018;
         public static final int buttonlogin=0x7f050006;
         public static final int contact=0x7f05001d;
         public static final int editText1=0x7f050009;
         public static final int email=0x7f050008;
         public static final int enquiry=0x7f05000c;
         public static final int entrybutton=0x7f050013;
-        public static final int events=0x7f05001a;
+        public static final int events=0x7f050019;
         public static final int hybrid=0x7f050004;
         public static final int imageView1=0x7f050005;
-        public static final int listView1=0x7f05001e;
+        public static final int listView1=0x7f05001f;
         public static final int map=0x7f050014;
+        public static final int mapsearch=0x7f05001e;
         public static final int name=0x7f05000b;
         public static final int news=0x7f050017;
         public static final int none=0x7f050000;
@@ -272,7 +276,7 @@ containing a value of this type.
         public static final int photos=0x7f05001c;
         public static final int popupbutton=0x7f050010;
         public static final int row1=0x7f050016;
-        public static final int row2=0x7f05001b;
+        public static final int row2=0x7f05001a;
         public static final int satellite=0x7f050002;
         public static final int sendButton=0x7f05000e;
         public static final int terrain=0x7f050003;
@@ -281,7 +285,7 @@ containing a value of this type.
         public static final int textemail=0x7f05000a;
         public static final int textname=0x7f050007;
         public static final int username=0x7f050011;
-        public static final int web=0x7f05001f;
+        public static final int web=0x7f050020;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f070000;

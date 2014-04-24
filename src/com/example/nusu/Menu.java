@@ -17,6 +17,8 @@ public class Menu extends Activity{
 	ImageButton email;
 	ImageButton contact;
 	ImageButton events;
+	ImageButton mapSearch;
+	ImageButton activities;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -28,7 +30,7 @@ public class Menu extends Activity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent openStart = new Intent("com.example.nusu.MAPSEARCH");
+				Intent openStart = new Intent("com.example.nusu.NEWS");
 				startActivity(openStart);
 			}
 		});
@@ -81,6 +83,28 @@ public class Menu extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent openStart = new Intent("com.example.nusu.EVENTS");
+				startActivity(openStart);
+			}
+		});
+        
+        mapSearch = (ImageButton) findViewById(R.id.mapsearch);
+        mapSearch.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent openStart = new Intent("com.example.nusu.MAPSEARCH");
+				startActivity(openStart);
+			}
+		});
+        
+        activities = (ImageButton) findViewById(R.id.activities);
+        activities.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent openStart = new Intent("com.example.nusu.ACTIVITIES");
 				startActivity(openStart);
 			}
 		});

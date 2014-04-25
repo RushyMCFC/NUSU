@@ -93,7 +93,7 @@ public class Menu extends Activity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent openStart = new Intent("com.example.nusu.MAPSEARCH");
+				Intent openStart = new Intent("com.example.nusu.MAPSEARCHMENU");
 				startActivity(openStart);
 			}
 		});

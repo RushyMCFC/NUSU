@@ -51,8 +51,12 @@
             android:id="@+id/email"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
             android:background="@drawable/emailcustom"
             android:clickable="true" />
+
     </RelativeLayout>
 
     <ImageButton
@@ -61,16 +65,8 @@
         android:layout_height="100dp"
         android:layout_alignLeft="@+id/row1"
         android:layout_below="@+id/row1"
+        android:layout_marginTop="30dp"
         android:background="@drawable/activitiescustom"
-        android:clickable="true" />
-
-    <ImageButton
-        android:id="@+id/photos"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignRight="@+id/row1"
-        android:layout_alignTop="@+id/row2"
-        android:background="@drawable/photoscustom"
         android:clickable="true" />
 
     <ImageButton
@@ -79,7 +75,7 @@
         android:layout_height="100dp"
         android:layout_alignLeft="@+id/activities"
         android:layout_below="@+id/activities"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/contactcustom"
         android:clickable="true" />
 
@@ -87,9 +83,8 @@
         android:id="@+id/mapsearch"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignLeft="@+id/row2"
-        android:layout_below="@+id/row2"
-        android:layout_marginTop="18dp"
+        android:layout_above="@+id/contact"
+        android:layout_alignRight="@+id/row1"
         android:background="@drawable/mapsearchcustom"
         android:clickable="true" />
 

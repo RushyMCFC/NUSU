@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				try {
-				Intent openStart = new Intent("com.example.nusu.MENU");
+				Intent openStart = new Intent("com.example.nusu.ENTRY");
 				startActivity(openStart);
 				}catch(Exception e) {
 					e.printStackTrace();

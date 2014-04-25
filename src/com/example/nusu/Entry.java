@@ -1,6 +1,7 @@
 package com.example.nusu;
 
 import com.parse.LogInCallback;
+import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
@@ -18,6 +19,7 @@ public class Entry extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.entry);
+		onCreateParse();
 		// TODO Auto-generated method stub
 		Button entryb;
 		EditText u = (EditText) findViewById(R.id.username);
@@ -33,7 +35,7 @@ public class Entry extends Activity{
 				ParseUser.logInInBackground(user, pass, new LogInCallback() {
 					  public void done(ParseUser user, ParseException e) {
 					    if (user != null) {
-					    	Intent openStart = new Intent("com.example.nusu.MENU");
+					    	Intent openStart = new Intent(Entry.this, Menu.class);
 							startActivity(openStart);
 					    } else {
 					      Toast.makeText(getParent(), "Wrong username or password", 1000).show();
@@ -44,6 +46,10 @@ public class Entry extends Activity{
 				//startActivity(openStart);
 			}
 		});
+	}
+	
+	public void onCreateParse() { 
+		Parse.initialize(this, "4sBrHygjOI6X0zmbhoVA0AIuTwH22039INo2NbKb", "y5lCUAXPz72Te4wUV7mtLXQcVdLge2KuKrHIXYv5"); 
 	}
 
 }

@@ -406,6 +406,7 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
+        public static final int error_field_required=0x7f060024;
         public static final int hello_world=0x7f06001d;
         /**  Location client code resources (prefix with location_client) 
          */

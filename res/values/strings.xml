@@ -10,5 +10,6 @@
     <string name="Enquiry">Enquiry :-</string>
     <string name="Name">Name :-</string>
     <string name="Email">Email :-</string>
+    <string name="error_field_required">This field is required</string>
 
 </resources>
